@@ -19,7 +19,8 @@ module.exports = {
   siteMetadata: {
     title: 'Sample Potfolio',
     description: 'sample portfolio for example',
-    copyright: 'This site is copyright 2022 Samp Port'
+    copyright: 'This site is copyright 2022 Samp Port',
+    contact: 'info@sample.com'
   }
 }
 

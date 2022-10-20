@@ -24,6 +24,8 @@
     font-weight: 500;
   }
   .project p {
+    text-align: center;
     color: #ccc;
     margin-top: 4px;
+    grid-column: 1 / -1;
   }
