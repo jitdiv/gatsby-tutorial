@@ -7,20 +7,28 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-    'gatsby-transformer-remark',
+    `gatsby-transformer-remark`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'projects',
+        name: `projects`,
         path: `${__dirname}/src/projects/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
       },
     },
   ],
   siteMetadata: {
-    title: 'Sample Potfolio',
-    description: 'sample portfolio for example',
-    copyright: 'This site is copyright 2022 Samp Port',
-    contact: 'info@sample.com'
-  }
+    title: 'Web Warrior',
+    description: 'web dev portfolio',
+    copyright: 'This website is copyright 2021 Web Warrior',
+    contact: 'me@thewebwarrioruk.co.uk',
+  },
 }
-
