@@ -9,13 +9,13 @@ export default function Projects({ data }) {
   const projects = data.projects.nodes;
   const contact = data.contact.siteMetadata.contact;
   return (
-    <Layout> 
+    <Layout>
         <div className={portfolio}>
         <h2>Portfolio</h2>
         </div>
         <div className={project}>
-          {projects.map(project => 
-            <Link to={"projects" + project.frontmatter.slug} key={project.id}>
+          {projects.map(project =>
+            <Link to={"projects/" + project.frontmatter.slug} key={project.id}>
               <Img fluid={project.frontmatter.thumb.childImageSharp.fluid} />
               <h3>{project.frontmatter.title}</h3>
               <p>{project.frontmatter.stack}</p>
