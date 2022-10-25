@@ -10,11 +10,11 @@ export default function Home({ data }) {
       <section className={header}>
         <div>
           <h2>Design</h2>
-          <h3> Developy & Deploy</h3>
+          <h3> Develop & Deploy!!!!!</h3>
           <p>This is the sample site for this example</p>
           <Link className={btn} to="/projects">
             Portfolio Projects
-          </Link>        
+          </Link>
         </div>
         <Img fluid={data.file.childImageSharp.fluid}/>
       </section>
